@@ -1,0 +1,18 @@
+server:
+  port: 16000
+
+spring:
+  application:
+    name: consumer
+  cloud:
+    nacos:
+      config:
+        import-check:
+          enabled: false
+        server-addr: 127.0.0.1:8848
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
+        http: DEBUG
